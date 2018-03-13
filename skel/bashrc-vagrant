@@ -6,7 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # emacs is the greatest OS ever
-export VISUAL=emacs
+export VISUAL=vi
 export EDITOR="$VISUAL"
 
 # Set up path (npm, virtualenvwrapper, postgres)
@@ -37,7 +37,7 @@ shopt -s checkwinsize
 # Useful aliases
 alias menu='cat /etc/motd'
 alias ccat='pygmentize -O style=monokai,linenos=1 -f terminal -g'
-alias get_keys='cd ~ && scp -r tallen@cdl-django0101:~/.{ssh,aws} . && git remote set-url origin git@github.com:FlipperPA/home.git'
+alias get_keys='cd ~ && scp -r spalding@cdl-django0101:~/.{ssh,aws} . && git remote set-url origin git@github.com:matthew-a-spalding/home.git'
 
 # Dev environment shortcuts
 devmanage() {
